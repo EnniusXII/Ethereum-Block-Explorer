@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETH Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="content/css/index.css">
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js"
@@ -19,18 +22,15 @@
     </header>
 
     <main>
+        <img src="content/img/logo.jpg" alt="ethereum logo" height="150" width="150">
         <section class="container">
-            <div>
-                <input type="text" id="account-number" placeholder="From address">
-                <button id="check-balance">Check Balance</button>
-                <div id="balance"></div>
-                <div id="block-number"></div>
-            </div>
-            <div>
-                <input type="text" id="amount" placeholder="Amount in eth">
-                <input type="text" id="to-account" placeholder="To address">
-                <button id="send-button">Send</button>
-            </div>
+            <input type="text" id="account-number" placeholder="From address">
+            <button id="check-balance">Check Balance</button>
+            <div id="balance"></div>
+            <div id="block-number"></div>
+            <input type="text" id="amount" placeholder="Amount in eth">
+            <input type="text" id="to-account" placeholder="To address">
+            <button id="send-button">Send</button>           
         </section>
     </main>
 </body>
