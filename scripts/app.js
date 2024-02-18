@@ -1,6 +1,7 @@
 const accountInput = document.querySelector('#account-number');
 const checkBalanceButton = document.querySelector('#check-balance');
 const displayBalance = document.querySelector('#balance');
+const displayBlock = document.querySelector('#block-number');
 const valueInput = document.querySelector('#amount');
 const toAccountInput = document.querySelector('#to-account');
 const sendButton = document.querySelector('#send-button');
@@ -14,6 +15,9 @@ async function checkBalance() {
 
     const balance = await rpc.eth.getBalance(account);
     displayBalance.textContent = `${rpc.utils.fromWei(balance, 'ether')} ETH`
+
+    const blockNumber = await rpc.eth.getBlockNumber()
+    displayBlock.textContent = `Latest Block: ${blockNumber}`;
 }
 
 async function sendTransaction() {
