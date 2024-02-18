@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETH Explorer</title>
+    <link rel="stylesheet" href="content/css/index.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js"
+      integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="scripts/app.js" type="module" defer></script>
 </head>
 <body>
     
@@ -12,7 +19,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="container">
             <div>
                 <input type="text" id="account-number" placeholder="From address">
                 <button id="check-balance">Check Balance</button>
