@@ -6,9 +6,13 @@ const valueInput = document.querySelector('#amount');
 const toAccountInput = document.querySelector('#to-account');
 const sendButton = document.querySelector('#send-button');
 
+
+function initApp() {}
+
 const rpc = new Web3('HTTP://127.0.0.1:7545');
 
 let account;
+
 
 async function checkBalance() {
     account = accountInput.value;
@@ -40,3 +44,4 @@ async function sendTransaction() {
 
 checkBalanceButton.addEventListener('click', checkBalance)
 sendButton.addEventListener('click', sendTransaction)
+document.addEventListener('DOMContentLoaded', initApp)
